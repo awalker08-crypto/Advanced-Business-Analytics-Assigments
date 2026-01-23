@@ -33,7 +33,7 @@ rate_count <- netflix %>%
 
 print(rate_count)
 
-# Plot number of titles by year
+# The total number of original content made by netflix over the years
 ggplot(year_count, aes(x = release_year, y = n)) +
   geom_line() +
   labs(
@@ -41,4 +41,5 @@ ggplot(year_count, aes(x = release_year, y = n)) +
     x = "Release Year",
     y = "Number of Titles"
   )
+
 
